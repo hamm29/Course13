@@ -1,0 +1,12 @@
+﻿  Important Before You Start.cpp
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,38): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,38): warning C4305:         with
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,38): warning C4305:         [
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,38): warning C4305:             T=float
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,38): warning C4305:         ]
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,33): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,33): warning C4305:         with
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,33): warning C4305:         [
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,33): warning C4305:             T=float
+C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\Important Before You Start.cpp(66,33): warning C4305:         ]
+  Important Before You Start.vcxproj -> C:\Users\hamma\Documents\GitHub\Course13\Important Before You Start\x64\Debug\Important Before You Start.exe
