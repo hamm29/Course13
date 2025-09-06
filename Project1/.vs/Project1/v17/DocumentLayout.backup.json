@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsDblLinkedList.h",
-              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsDblLinkedList.h",
-              "RelativeDocumentMoniker": "clsDblLinkedList.h",
-              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsDblLinkedList.h",
-              "RelativeToolTip": "clsDblLinkedList.h",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAAKIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-06T07:34:41.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Project1.cpp",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\Project1.cpp",
               "RelativeDocumentMoniker": "Project1.cpp",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\Project1.cpp*",
               "RelativeToolTip": "Project1.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-06T07:31:22.326Z",
+              "WhenOpened": "2025-09-06T18:35:09.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsDblLinkedList.h",
+              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsDblLinkedList.h",
+              "RelativeDocumentMoniker": "clsDblLinkedList.h",
+              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsDblLinkedList.h*",
+              "RelativeToolTip": "clsDblLinkedList.h*",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAK0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-06T17:56:37.722Z",
               "EditorCaption": ""
             }
           ]
