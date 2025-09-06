@@ -23,11 +23,9 @@ int main()
     cout << "\nLinked List Content:\n";
     MydblLinkedList.PrintList();
 
-    cout << "Number of items in the linked list = " << MydblLinkedList.Size();
-
-    if (MydblLinkedList.IsEmpty())
-	   cout << "\nYes, list is empty.\n";
-    else
-	   cout << "\nNo, List is not Empty.\n";
+    
+    MydblLinkedList.Reverse();
+    cout << "\nLinked List Content After revers:\n";
+    MydblLinkedList.PrintList();
 
 }
