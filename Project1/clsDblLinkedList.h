@@ -43,7 +43,7 @@ public:
 		  cout << current->value << " ";
 		  current = current->next;
 	   }
-	   cout << "\n" << endl;
+	   cout << "\n";
     }
 
     Node* Find(T value)
@@ -79,6 +79,18 @@ public:
 	   }
 	   current->next = newNode;
 	   _Size++;
+    }
+
+    bool InsertAfter(int Index, T value)
+    {
+	   Node* N1 = GetNode(Index);
+	   if (N1 != NULL)
+	   {
+		  InsertAfter(N1, value);
+		  return true;
+	   }
+	   else
+		  return false;
     }
 
     void InsertAtEnd(T value)
@@ -227,6 +239,18 @@ public:
 		  return NULL;
 	   else
 		  return ItemNode->value;
+    }
+
+    bool UpdateItem(int Index, T value)
+    {
+	   Node* ItemNode = GetNode(Index);
+	   if (ItemNode != NULL)
+	   {
+		  ItemNode->value = value;
+		  return true;
+	   }
+	   else
+		  return false;
     }
 
 };

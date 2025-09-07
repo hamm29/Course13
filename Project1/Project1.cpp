@@ -1,41 +1,57 @@
 
 #include <iostream>
 #include "clsDblLinkedList.h"
+#include "clsMyQueue.h"
 
 using namespace std;
 
 int main()
 {
-    clsDblLinkedList <int> MydblLinkedList;
+    clsMyQueue <int> myQueue;
 
-    if (MydblLinkedList.IsEmpty())
-	   cout << "\nYes, list is empty.\n";
-    else
-	   cout << "\nNo, List is not Empty.\n";
+    myQueue.push(10);
+    myQueue.push(20);
+    myQueue.push(30);
+    myQueue.push(40);
+    myQueue.push(50);
+
+    cout << "\nQueue: \n";
+    myQueue.Print();
+
+    cout << "\nQueue Size: " << myQueue.Size();
+    cout << "\nQueue front: " << myQueue.front();
+    cout << "\nQueue back: " << myQueue.back();
+
+    myQueue.pop();
+
+    cout << "\n\nQueue after pop(): \n";
+    myQueue.Print();
 
 
-    MydblLinkedList.InsertAtBeginning(5);
-    MydblLinkedList.InsertAtBeginning(4);
-    MydblLinkedList.InsertAtBeginning(3);
-    MydblLinkedList.InsertAtBeginning(2);
-    MydblLinkedList.InsertAtBeginning(1);
+    cout << "\nItem(2) : " << myQueue.GetItem(2);
 
-    cout << "\nLinked List Content:\n";
-    MydblLinkedList.PrintList();
+    myQueue.Revers();
+    cout << "\n\nQueue After Reverse() : ";
+    myQueue.Print();
 
-    
-    clsDblLinkedList <int>::Node* N1;
+    myQueue.UpdateItem(2, 600);
+    cout << "\nQueue After Udpating Item(2) to 600 : ";
+    myQueue.Print();
 
-    N1 = MydblLinkedList.GetNode(2);
+    myQueue.InsertAfter(2, 800);
+    cout << "\nQueue After Inserting 800 after Item(2) : ";
+    myQueue.Print();
 
-    if (N1 != NULL)
-    {
-	   cout << "\nNode Value is: " << N1->value;
-    }
-    else
-	   cout << "\nNode was not found.\n";
+    myQueue.InsertAtFront(1000);
+    cout << "\nQueue After Inserting 1000 at front : ";
+    myQueue.Print();
 
-    cout << "\nItem(2) Value is: " << MydblLinkedList.GetItem(2);
+    myQueue.InsertAtBack(2000);
+    cout << "\nQueue After Inserting 2000 at Back : ";
+    myQueue.Print();
 
+    myQueue.Clear();
+    cout << "\nQueue After Clear() : ";
+    myQueue.Print();
 
 }
