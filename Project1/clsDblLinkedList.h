@@ -184,7 +184,49 @@ public:
 
     void Reverse()
     {
+	   Node* current = head;
+	   Node* temp = nullptr;
+	   while (current != nullptr)
+	   {
+		  temp = current->prev;
+		  current->prev = current->next;
+		  current->next = temp;
+		  current = current->prev;
+	   }
+	   if (temp != nullptr)
+	   {
+		  head = temp->prev;
+	   }
 	   
+    }
+
+    Node* GetNode(int Index)
+    {
+	   if (Index > _Size - 1 || Index < 0)
+		  return NULL;
+
+	   Node* current = head;
+	   int counter = 0;
+
+	   while (current != NULL && (current->next != NULL))
+	   {
+		  if (counter == Index)
+			 break;
+
+		  counter++;
+		  current = current->next;
+	   }
+	   return current;
+    }
+
+    T GetItem(int Index)
+    {
+	   Node* ItemNode = GetNode(Index);
+
+	   if (ItemNode == NULL)
+		  return NULL;
+	   else
+		  return ItemNode->value;
     }
 
 };

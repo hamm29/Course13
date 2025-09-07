@@ -24,8 +24,18 @@ int main()
     MydblLinkedList.PrintList();
 
     
-    MydblLinkedList.Reverse();
-    cout << "\nLinked List Content After revers:\n";
-    MydblLinkedList.PrintList();
+    clsDblLinkedList <int>::Node* N1;
+
+    N1 = MydblLinkedList.GetNode(2);
+
+    if (N1 != NULL)
+    {
+	   cout << "\nNode Value is: " << N1->value;
+    }
+    else
+	   cout << "\nNode was not found.\n";
+
+    cout << "\nItem(2) Value is: " << MydblLinkedList.GetItem(2);
+
 
 }

@@ -1,13 +1,2 @@
 ﻿  Project1.cpp
-C:\Users\hamma\Documents\GitHub\Course13\Project1\clsDblLinkedList.h(194,10): warning C4553: '==': result of expression not used; did you intend '='?
-  (compiling source file 'Project1.cpp')
-      C:\Users\hamma\Documents\GitHub\Course13\Project1\clsDblLinkedList.h(194,10):
-      the template instantiation context (the oldest one first) is
-          C:\Users\hamma\Documents\GitHub\Course13\Project1\Project1.cpp(9,28):
-          see reference to class template instantiation 'clsDblLinkedList<int>' being compiled
-          C:\Users\hamma\Documents\GitHub\Course13\Project1\clsDblLinkedList.h(185,10):
-          while compiling class template member function 'void clsDblLinkedList<int>::Reverse(void)'
-              C:\Users\hamma\Documents\GitHub\Course13\Project1\Project1.cpp(27,28):
-              see the first reference to 'clsDblLinkedList<int>::Reverse' in 'main'
-  
   Project1.vcxproj -> C:\Users\hamma\Documents\GitHub\Course13\Project1\x64\Debug\Project1.exe
