@@ -5,79 +5,79 @@
 template <class T>
 class clsMyQueue
 {
-private:
-    clsDblLinkedList<T>myList;
+protected:
+    clsDblLinkedList<T>_MyList;
 
 public:
     
     void push(T item)
     {
-	   myList.InsertAtEnd(item);
+	   _MyList.InsertAtEnd(item);
     }
 
     void pop()
     {
-	   myList.DeleteFirstNode();
+	   _MyList.DeleteFirstNode();
     }
 
     void Print()
     {
-	   myList.PrintList();
+	   _MyList.PrintList();
     }
 
     int Size()
     {
-	   return myList.Size();
+	   return _MyList.Size();
     }
 
     bool IsEmpty()
     {
-	   return myList.IsEmpty();
+	   return _MyList.IsEmpty();
     }
 
     T front()
     {
-	   return myList.GetItem(0);
+	   return _MyList.GetItem(0);
     }
 
     T back()
     {
-	   return myList.GetItem(Size() - 1);
+	   return _MyList.GetItem(Size() - 1);
     }
 
     T GetItem(int Index)
     {
-	   return myList.GetItem(Index);
+	   return _MyList.GetItem(Index);
     }
 
-    void Revers()
+    void Reverse()
     {
-	   myList.Reverse();
+	   _MyList.Reverse();
     }
 
     void UpdateItem(int Index,T newValue)
     {
-	   myList.UpdateItem(Index, newValue);
+	   _MyList.UpdateItem(Index, newValue);
     }
 
     void InsertAfter(int index, T value)
     {
-	   myList.InsertAfter(index, value);
+	   _MyList.InsertAfter(index, value);
     }
 
     void InsertAtFront(T value)
     {
-	   myList.InsertAtBeginning(value);
+	   _MyList.InsertAtBeginning(value);
     }
 
     void InsertAtBack(T value)
     {
-	   myList.InsertAtEnd(value);
+	   _MyList.InsertAtEnd(value);
     }
 
     void Clear()
     {
-	   myList.Clear();
+	   _MyList.Clear();
     }
 };
 
