@@ -3,56 +3,49 @@
 #include "clsDblLinkedList.h"
 #include "clsMyQueue.h"
 #include "clsMyStack.h"
+#include "clsDynamicArray.h"
+
 
 using namespace std;
 
 int main()
 {
-    clsMyStack<int>MyStack;
 
-    MyStack.push(10);
-    MyStack.push(20);
-    MyStack.push(30);
-    MyStack.push(40);
-    MyStack.push(50);
+    clsDynamicArray <int> MyArray(5);
 
-    cout << "\nStack: \n";
-    MyStack.Print();
+    MyArray.SetItem(0, 10);
+    MyArray.SetItem(1, 20);
+    MyArray.SetItem(2, 30);
+    MyArray.SetItem(3, 40);
+    MyArray.SetItem(4, 50);
 
-    cout << "\nStack Size: " << MyStack.Size();
-    cout << "\nStack Top: " << MyStack.Top();
-    cout << "\nStack Bottom: " << MyStack.Bottom();
+   
+    cout << "\n\nMy Array: \n"; 
+    MyArray.PrintList();
+    cout << "Array Size: " << MyArray.Size();
 
-    MyStack.pop();
+   
+    
+    MyArray.InsertAtBeginning(400);
+    cout << "\n\nArray Size: " << MyArray.Size();
+    cout << "\nArray Items after adding 400 at Beginning: \n";
+    MyArray.PrintList();
 
-    cout << "\n\nStack after pop() : \n";
-    MyStack.Print();
+    MyArray.InsertBefore(2, 500);
+    cout << "\n\nArray Size: " << MyArray.Size();
+    cout << "\nArray Items after insert 500 before index 2: \n";
+    MyArray.PrintList();
 
-    cout << "\n\n Item(2) : " << MyStack.GetItem(2);
+    MyArray.InsertAfter(2, 600);
+    cout << "\n\nArray Size: " << MyArray.Size();
+    cout << "\nArray Items after insert 600 after index 2: \n";
+    MyArray.PrintList();
 
-    MyStack.Reverse();
-    cout << "\n\nStack after reverse() : \n";
-    MyStack.Print();
-
-    MyStack.UpdateItem(2, 600);
-    cout << "\n\nStack after Updating Item(2) to 600 : \n";
-    MyStack.Print();
-
-    MyStack.InsertAfter(2, 800);
-    cout << "\n\nStack after inserting 800 after Item(2) : \n";
-    MyStack.Print();
-
-    MyStack.InsertAtFront(1000);
-    cout << "\n\nStack after inserting 1000 at Top: \n";
-    MyStack.Print();
-
-    MyStack.InsertAtBack(2000);
-    cout << "\n\nStack after inserting 1000 at Top: \n";
-    MyStack.Print();
-
-    MyStack.Clear();
-    cout << "\n\nStack after Clear(): \n";
-    MyStack.Print();
+    MyArray.InsertAtEnd(800);
+    cout << "\n\nArray Size: " << MyArray.Size();
+    cout << "\nArray Items after adding 800 at End: \n";
+    MyArray.PrintList();
 
 
+    system("pause>0");
 }
