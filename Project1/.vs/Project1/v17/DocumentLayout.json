@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{310D52C1-4849-47FF-AC6A-88750F9CA03C}|Project1.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsDynamicArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{310D52C1-4849-47FF-AC6A-88750F9CA03C}|Project1.vcxproj|solutionrelative:clsDynamicArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{310D52C1-4849-47FF-AC6A-88750F9CA03C}|Project1.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsQueueLine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{310D52C1-4849-47FF-AC6A-88750F9CA03C}|Project1.vcxproj|solutionrelative:clsQueueLine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{310D52C1-4849-47FF-AC6A-88750F9CA03C}|Project1.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsMyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{310D52C1-4849-47FF-AC6A-88750F9CA03C}|Project1.vcxproj|solutionrelative:clsMyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{310D52C1-4849-47FF-AC6A-88750F9CA03C}|Project1.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\Project1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -35,27 +39,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsDynamicArray.h",
-              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsDynamicArray.h",
-              "RelativeDocumentMoniker": "clsDynamicArray.h",
-              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsDynamicArray.h",
-              "RelativeToolTip": "clsDynamicArray.h",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAswNIAAAAIAAAAAAAAAA==",
+              "Title": "clsQueueLine.h",
+              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsQueueLine.h",
+              "RelativeDocumentMoniker": "clsQueueLine.h",
+              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsQueueLine.h",
+              "RelativeToolTip": "clsQueueLine.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T10:41:34.574Z",
+              "WhenOpened": "2025-09-12T13:16:43.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Project1.cpp",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\Project1.cpp",
               "RelativeDocumentMoniker": "Project1.cpp",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\Project1.cpp",
               "RelativeToolTip": "Project1.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-06T18:35:09.684Z",
+              "WhenOpened": "2025-09-12T10:12:01.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsMyString.h",
+              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsMyString.h",
+              "RelativeDocumentMoniker": "clsMyString.h",
+              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course13\\Project1\\clsMyString.h",
+              "RelativeToolTip": "clsMyString.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-12T10:11:53.917Z",
               "EditorCaption": ""
             }
           ]

@@ -4,47 +4,53 @@
 #include "clsMyQueue.h"
 #include "clsMyStack.h"
 #include "clsDynamicArray.h"
-
+#include "clsMyQueueArr.h"
+#include "clsMyStackArr.h"
+#include "clsMyString.h"
 
 using namespace std;
 
 int main()
 {
+    clsMyString S1;
 
-    clsDynamicArray <int> MyArray(5);
+    cout << "\n\n\t\tUndo/Redo Project\n\n";
 
-    MyArray.SetItem(0, 10);
-    MyArray.SetItem(1, 20);
-    MyArray.SetItem(2, 30);
-    MyArray.SetItem(3, 40);
-    MyArray.SetItem(4, 50);
+    cout << "\nS1 = " << S1.Value << "\n";
 
-   
-    cout << "\n\nMy Array: \n"; 
-    MyArray.PrintList();
-    cout << "Array Size: " << MyArray.Size();
+    S1.Value = "Hammad";
 
-   
+    cout << "\nS1 = " << S1.Value << "\n";
     
-    MyArray.InsertAtBeginning(400);
-    cout << "\n\nArray Size: " << MyArray.Size();
-    cout << "\nArray Items after adding 400 at Beginning: \n";
-    MyArray.PrintList();
+    S1.Value = "Hammad2";
 
-    MyArray.InsertBefore(2, 500);
-    cout << "\n\nArray Size: " << MyArray.Size();
-    cout << "\nArray Items after insert 500 before index 2: \n";
-    MyArray.PrintList();
+    cout << "\nS1 = " << S1.Value << "\n";
 
-    MyArray.InsertAfter(2, 600);
-    cout << "\n\nArray Size: " << MyArray.Size();
-    cout << "\nArray Items after insert 600 after index 2: \n";
-    MyArray.PrintList();
+    S1.Value = "Hammad3";
 
-    MyArray.InsertAtEnd(800);
-    cout << "\n\nArray Size: " << MyArray.Size();
-    cout << "\nArray Items after adding 800 at End: \n";
-    MyArray.PrintList();
+    cout << "\nS1 = " << S1.Value << "\n";
+
+    S1.Undo();
+    cout << "\n\n\nS1 = " << S1.Value << "\n";
+
+    S1.Undo();
+    cout << "\nS1 = " << S1.Value << "\n";
+
+    S1.Undo();
+    cout << "\nS1 = " << S1.Value << "\n";
+
+
+    S1.Redo();
+    cout << "\n\n\nS1 = " << S1.Value << "\n";
+
+    S1.Redo();
+    cout << "\nS1 = " << S1.Value << "\n";
+
+    S1.Redo();
+    cout << "\nS1 = " << S1.Value << "\n";
+
+    S1.Redo();
+    cout << "\nS1 = " << S1.Value << "\n";
 
 
     system("pause>0");
