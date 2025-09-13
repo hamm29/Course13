@@ -1,57 +1,51 @@
 
 #include <iostream>
-#include "clsDblLinkedList.h"
-#include "clsMyQueue.h"
-#include "clsMyStack.h"
-#include "clsDynamicArray.h"
-#include "clsMyQueueArr.h"
-#include "clsMyStackArr.h"
-#include "clsMyString.h"
+#include "clsQueueLine.h"
 
 using namespace std;
 
 int main()
 {
-    clsMyString S1;
+    clsQueueLine PayBillsQueue("A0", 10);
+    clsQueueLine SubscriptionsQueue("B0", 5);
 
-    cout << "\n\n\t\tUndo/Redo Project\n\n";
+    PayBillsQueue.IssueTicket();
+    PayBillsQueue.IssueTicket();
+    PayBillsQueue.IssueTicket();
+    PayBillsQueue.IssueTicket();
+    PayBillsQueue.IssueTicket();
 
-    cout << "\nS1 = " << S1.Value << "\n";
+    cout << "\t\t\tPay Bills Queue Info: \n";
+    PayBillsQueue.PrintInfo();
 
-    S1.Value = "Hammad";
+    PayBillsQueue.PrintTicketsLineRTL();
+    PayBillsQueue.PrintTicketsLineLTR();
 
-    cout << "\nS1 = " << S1.Value << "\n";
+    PayBillsQueue.PrintAllTickets();
+
+
+    PayBillsQueue.ServeNextClient();
+    cout << "\n\n\t\t\tPay Bills Queue Info after serving one client: \n";
+    PayBillsQueue.PrintInfo();
+
+
+    cout << "\n\n\t\t\tSubscriptions Queue Info: \n";
     
-    S1.Value = "Hammad2";
+    SubscriptionsQueue.IssueTicket();
+    SubscriptionsQueue.IssueTicket();
+    SubscriptionsQueue.IssueTicket();
 
-    cout << "\nS1 = " << S1.Value << "\n";
+    SubscriptionsQueue.PrintInfo();
 
-    S1.Value = "Hammad3";
+    SubscriptionsQueue.PrintTicketsLineLTR();
+    SubscriptionsQueue.PrintTicketsLineRTL();
 
-    cout << "\nS1 = " << S1.Value << "\n";
+    SubscriptionsQueue.PrintAllTickets();
 
-    S1.Undo();
-    cout << "\n\n\nS1 = " << S1.Value << "\n";
+    SubscriptionsQueue.ServeNextClient();
+    cout << "\n\n\t\t\tSubscriptions Queue Info after serving one client: \n";
+    SubscriptionsQueue.PrintInfo();
 
-    S1.Undo();
-    cout << "\nS1 = " << S1.Value << "\n";
-
-    S1.Undo();
-    cout << "\nS1 = " << S1.Value << "\n";
-
-
-    S1.Redo();
-    cout << "\n\n\nS1 = " << S1.Value << "\n";
-
-    S1.Redo();
-    cout << "\nS1 = " << S1.Value << "\n";
-
-    S1.Redo();
-    cout << "\nS1 = " << S1.Value << "\n";
-
-    S1.Redo();
-    cout << "\nS1 = " << S1.Value << "\n";
-
-
-    system("pause>0");
+    cout << "\n\n\n";
+    //system("pause>0");
 }

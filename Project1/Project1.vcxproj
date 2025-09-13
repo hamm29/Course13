@@ -126,6 +126,7 @@
     <ClCompile Include="Project1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="clsDate.h" />
     <ClInclude Include="clsDblLinkedList.h" />
     <ClInclude Include="clsDynamicArray.h" />
     <ClInclude Include="clsMyQueue.h" />
@@ -134,6 +135,7 @@
     <ClInclude Include="clsMyStackArr.h" />
     <ClInclude Include="clsMyString.h" />
     <ClInclude Include="clsQueueLine.h" />
+    <ClInclude Include="clsString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
